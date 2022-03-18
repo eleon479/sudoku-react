@@ -1,6 +1,22 @@
+:root {
+  --background: #000000;
+  --tile-background-color: #3e065f;
+  --major-border-color: #700b97;
+  --minor-border-color: #700b97;
+  --tile-focus-color: #8e05c2;
+  --text-color: #5ee6eb;
+}
+
+html,
+body {
+  background-color: var(--background);
+}
+
 .App {
+  font-family: sans-serif;
   text-align: center;
   margin-top: 50px;
+  color: var(--text-color);
 }
 
 .Grid {
@@ -19,7 +35,7 @@
 
 .Tile {
   text-align: center;
-  border: 1px solid grey;
+  border: 1px solid var(--minor-border-color);
   margin: -1px 0px 0px -1px;
   padding: 0;
   width: 50px;
@@ -29,22 +45,24 @@
   vertical-align: middle;
   line-height: 50px;
   caret-color: transparent;
+  color: var(--text-color);
+  background-color: var(--tile-background-color);
 }
 
 .top-border {
-  border-top: 3px solid green;
+  border-top: 3px solid var(--major-border-color);
 }
 
 .bottom-border {
-  border-bottom: 3px solid green;
+  border-bottom: 3px solid var(--major-border-color);
 }
 
 .left-border {
-  border-left: 3px solid green;
+  border-left: 3px solid var(--major-border-color);
 }
 
 .right-border {
-  border-right: 3px solid green;
+  border-right: 3px solid var(--major-border-color);
 }
 
 .top-left {
@@ -62,5 +80,5 @@
 
 input.Tile:focus {
   outline: none;
-  background-color: rgb(154, 154, 255);
+  background-color: var(--tile-focus-color);
 }
