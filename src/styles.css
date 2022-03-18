@@ -19,7 +19,7 @@
 
 .Tile {
   text-align: center;
-  border: 1px solid green;
+  border: 1px solid grey;
   margin: -1px 0px 0px -1px;
   padding: 0;
   width: 50px;
@@ -29,6 +29,35 @@
   vertical-align: middle;
   line-height: 50px;
   caret-color: transparent;
+}
+
+.top-border {
+  border-top: 3px solid green;
+}
+
+.bottom-border {
+  border-bottom: 3px solid green;
+}
+
+.left-border {
+  border-left: 3px solid green;
+}
+
+.right-border {
+  border-right: 3px solid green;
+}
+
+.top-left {
+  border-radius: 25px 0px 0px 0px;
+}
+.top-right {
+  border-radius: 0px 25px 0px 0px;
+}
+.bottom-left {
+  border-radius: 0px 0px 0px 25px;
+}
+.bottom-right {
+  border-radius: 0px 0px 25px 0px;
 }
 
 input.Tile:focus {
